@@ -1,0 +1,582 @@
+
+/* 
+**	Theme Name: Admin Template
+**	Author Name: @heyallanmoreno
+*/
+
+/*****************************************************************************
+	Page Styles
+*****************************************************************************/
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);*/
+
+body {
+    color: #8E959C;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 105px;
+    font:14px/180% 'Microsoft Yahei',tahoma,arial,sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #2F353E;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px 0 10px 0;
+    background: url('images/line.gif') center repeat-x;
+}
+
+h2 span {
+    background: #FFF;
+    padding: 0 20px;
+}
+
+h4.gray {
+    margin: 3px 0 5px 0;
+    color: #8E959C;
+}
+
+h4.litter {
+    margin: 6px 0 2px 0;
+}
+
+h5 {
+    margin: 3px 0 0 0;
+}
+
+h6 {
+    margin: 3px 0 0 0;
+    color: #8E959C;
+}
+
+hr.litter {
+    margin: 1px 0 0 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.framed {
+    margin-bottom: 10px;
+    border: 10px solid #FFF;
+    -moz-box-shadow: 0 0 7px #CCC;
+    -webkit-box-shadow: 0 0 7px #CCC;
+    box-shadow: 0 0 7px #CCC;
+}
+
+.feature-blocks {
+    margin-bottom: 50px;
+}
+
+.avatar {
+    padding: 0 10px 10px 0;
+}
+
+.thumbnail {
+    padding: 15px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail a img {
+    width: 100%;
+    height: auto;
+}
+.portfolio .thumbnail {
+    padding: 8px;
+}
+
+.input-flexible {
+    width: 90%;
+}
+
+.bordered {
+    border-right: 1px solid #EEE;
+    padding-right: 10px;
+}
+
+.borderedleft {
+    border-left: 1px solid #EEE;
+    padding-left: 10px;
+}
+
+.img-polaroid {
+    width: 85%;
+    padding: 10px;
+}
+
+/*****************************************************************************
+	Navbar Styles
+*****************************************************************************/
+
+.navbar-inverse .navbar-inner {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-image: none;
+    filter: none;
+}
+
+.sub-navbar {
+    padding-top: 3px;
+    padding-bottom: 3px;/* 由3px改为5px 上下对称 */
+}
+
+.sub-navbar .container {
+    color: #FFF;
+}
+
+/*.span10 a.brand {*/
+    /*color: #FFF;*/
+    /*background-color: transparent;*/
+    /*-webkit-box-shadow: none;*/
+    /*-moz-box-shadow: none;*/
+    /*box-shadow: none;*/
+/*}*/
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+    color: #FFF;
+    font-size:140%;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/*menu button*/
+.navbar-inverse .btn-navbar {
+    background-color: #121212;
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
+/*****************************************************************************
+	Header Styles
+*****************************************************************************/
+.showcase {
+    zoom: 1;
+    width: auto;
+    min-height: 100%;
+    padding: 10px 0 0px 0;/**设置首页顶端背景图高度**/
+    text-align: center;
+    background: url(../assets/header_background-12.png) center center no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/header_background-12.png', sizingMethod='scale'); /**IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/header_background-12.png', sizingMethod='scale')"; /*IE8*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.showcase .container .footbg {height: 100%;}
+
+.showcase h1, .showcase p {
+    text-transform: uppercase;
+    padding: 20px 10px;
+    color: #FFF;
+    background: #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    zoom: 1;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    -webkit-transition: all .5s;/* 焦点图切换动画设置 */
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.showcase h1:hover, .showcase p:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    margin-top: -20px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 21px;
+    color: white;
+    text-align: center;
+    background: #222;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    opacity: 0.3;
+    filter: alpha(opacity=70);
+}
+
+.carousel-control.left {
+    left: -10px;
+}
+
+.carousel-control.right {
+    right: -6px;
+}
+
+/*****************************************************************************
+	Strip Styles = Call to action
+*****************************************************************************/
+
+.strip {
+    width: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 10px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    zoom: 1;
+}
+
+.strip .container .row > div {
+    color: #8E959C;
+    font-weight: 400;
+}
+
+/*****************************************************************************
+    Blog
+*****************************************************************************/
+
+article h3 {
+    margin-top: -10px;
+}
+article h3 a {
+    color: #000;
+}
+article h3 a:hover {
+    color: #8E959C;
+}
+
+.post-image {
+    width: 95%;
+    margin-bottom: 15px;
+    border: 10px solid #FFF;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.well h4 {
+    margin-top: 0
+}
+
+.tags, .categories {
+    list-style: none;
+    margin-left: 0;
+}
+
+.tags {
+    font-size: 12px;
+}
+
+.categories li {
+    cursor: pointer;
+}
+
+.adspace {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.adspace a {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.adspace small {
+    display: inline-block;
+}
+
+/*****************************************************************************
+	Buttons
+*****************************************************************************/
+
+/************* default button ********************/
+
+.btn {
+    #padding:7px 13px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    #color: #FFF;
+    text-shadow: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border: none;
+    filter: none;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.btn:hover,
+.btn:active,
+.btn .active,
+.btn .disabled,
+.btn[disabled] {
+    color: #FFF;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/************* custom buttons ********************/
+
+.btn-login {
+    display: inline;
+    color: #FFF;
+    padding: 3px 10px;
+    font-weight: 400;
+}
+.btn-login:hover {
+    color: #333;
+}
+
+.btn-primary {
+    color: #FFF;
+    margin: 5px;
+    font-weight: 400;
+}
+
+.btn-facebook {
+    color:#FFF;
+    font-weight: 400;
+    margin: 5px 5px 0 0;
+}
+
+.btn-twitter {
+    color:#FFF;
+    font-weight: 400;
+    margin: 5px 5px 0 0;
+}
+
+/************ Responsive Videos *************/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    border: solid 10px #FFF;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*****************************************************************************
+	Footer Styles
+*****************************************************************************/
+.footbg {
+    zoom: 1;
+    width: auto;
+    min-height: 100%;
+    padding: 8px 0 0 0;/**设置首页顶端背景图高度**/
+    text-align: left;
+    background: url(../assets/foot_background-1.png) center center no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/foot_background-1.png', sizingMethod='scale'); /**IE7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/foot_background-1.png', sizingMethod='scale')"; /*IE8*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer {
+    width: auto;
+    margin-top: 0px; /* 25px to 0px */
+    margin-bottom: 0;
+    padding: 25px 20px 10px 20px;
+}
+footer a {
+    color: #FFF;
+}
+footer a:hover {
+    color: #8E959C;
+}
+
+/*****************************************************************************
+	Media Queries
+*****************************************************************************/
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0;
+    }
+    .navbar-fixed-top {
+        margin-bottom: 0;
+    }
+
+    .nav-collapse .nav > li > a,
+    .nav-collapse .dropdown-menu a {
+        color: #999;
+    }
+
+    /*padding*/
+    .sub-navbar, .showcase, .strip, footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    /*mantain full width*/
+    .showcase, .strip, .footbg, footer {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel-control.left {
+        left: -10px;
+    }
+    .carousel-control.right {
+        /*right: -10px;*/
+    }
+    .tags li {
+        display: inline;
+    }
+}
+
+
+
+/************* navbar ********************/
+
+.navbar-inverse .navbar-inner {
+	background: #2F353E;
+}
+
+.sub-navbar {
+	background: #545F27;
+}
+
+/************* strip ********************/
+
+.strip {
+	background: #2F353E;
+}
+
+
+#bdshare a{
+	top:40px;
+}
+ 
+/************* default button ********************/
+
+
+.btn:hover,
+.btn:active,
+.btn .active,
+.btn .disabled,
+.btn[disabled] {
+	background-color: #5F686F;
+}
+
+/************* utility buttons ********************/
+
+.btn-info {
+    background-color: #01A9DB;
+}
+.btn-info:hover {
+    background-color: #58D3F7;
+}
+
+.btn-success {
+    background-color: #0B610B;
+}
+.btn-success:hover {
+    background-color: #088A08;
+}
+
+.btn-warning {
+    background-color: #FF8000;
+}
+.btn-warning:hover {
+    background-color: #FACC2E;
+}
+
+.btn-danger {
+    background-color: #B40404;
+}
+.btn-danger:hover {
+    background-color: #FF0000;
+}
+
+.btn-inverse {
+    background-color: #1C1C1C;
+}
+.btn-inverse:hover {
+    background-color: #424242;
+}
+
+/************* custom buttons ********************/
+
+.btn-login {
+    background-color: #B9DC2F;
+}
+.btn-login:hover {
+	background-color: #EEE;
+}
+
+.btn-primary {
+    background-color: #85A506;
+}
+.btn-primary:hover {
+	background-color: #B9DC2F;
+}
+
+.btn-facebook { 
+    background-color: #3B5998;
+}
+.btn-facebook:hover {
+	background-color: #4682B4;
+}
+
+.btn-twitter {
+    background-color: #00A0D1;
+}
+.btn-twitter:hover {
+	background-color: #22C2F3;
+}
+
+/************* footer ********************/
+
+footer {
+	background: #2F353E;
+}

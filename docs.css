@@ -35,9 +35,9 @@ body > .navbar .brand {
   padding-right: 0;
   padding-left: 0;
   margin-left: 20px;
-  float: right;
+  float: left;
   font-weight: bold;
-  color: #000;
+  color: #087CF0;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
@@ -576,7 +576,7 @@ h2 + .row {
   padding: 39px 19px 14px;
   *padding-top: 19px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -1064,4 +1064,14 @@ form.bs-docs-example {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+
+.brand i {
+	color:#1cf;
+	font-size:15px;
+}
+
+.container ul {
+	top: 15px;
 }

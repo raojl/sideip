@@ -905,8 +905,9 @@
     margin: -10px;
   }
   .carousel-caption {
-    position: static;
-  }
+	background-color: transparent;
+	position: static;
+	max-width: 650px;
 }
 
 @media (max-width: 979px) {
